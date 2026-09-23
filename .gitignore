@@ -1,0 +1,41 @@
+# Compiled Binaries
+/radio
+/radio.exe
+/icecast_mock
+*.exe
+*.exe.manifest
+*.dll
+*.so
+*.dylib
+
+# Test Artifacts & Build Outputs
+*.test
+*.out
+*.log
+dist/
+
+# Persistent State & Runtime Files
+*.json
+!configs/*.json
+aircoda_state.json
+tunnel_state.json
+queue.json
+tunnel.log
+aircoda.log
+
+# Credentials & Tunnel Keys
+.cloudflared/
+*.pem
+*.key
+*.crt
+.env
+.env.*
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.tmp
+*~

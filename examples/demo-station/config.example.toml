@@ -1,0 +1,37 @@
+version = 1
+
+[station]
+name = "Aircoda Official Demo Radio"
+id = "demo-radio"
+
+[audio]
+source = "local"
+directory = "/var/aircoda/music"
+
+[playlist]
+mode = "shuffle"
+repeat = true
+recursive = true
+
+[streaming]
+host = "127.0.0.1"
+port = 8000
+mount = "/demo"
+bitrate = 128
+format = "mp3"
+source_password = "demohackme"
+admin_password = "demohackme"
+
+[public]
+mode = "tunnel"
+hostname = "demo.aircoda.org"
+
+[tunnel]
+enabled = true
+provider = "cloudflare"
+hostname = "demo.aircoda.org"
+target = "127.0.0.1:8000"
+
+[system]
+start_on_boot = true
+log_level = "info"

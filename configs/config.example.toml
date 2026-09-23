@@ -1,0 +1,20 @@
+# Aircoda Configuration Template
+version = 1
+
+[station]
+name = "986 FM"
+id = "986fm"
+
+[audio]
+source = "local" # Options: "local", "youtube", "later"
+directory = "/home/user/Music/radio"
+
+[streaming]
+enabled = false
+
+[tunnel]
+enabled = false
+
+[system]
+start_on_boot = true
+log_level = "info"
